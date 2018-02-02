@@ -266,7 +266,9 @@ a:after {
 .desc {
 	padding-top: 50px;
 }
-
+.desc .row {
+	margin: 0px;
+}
 .desc p {
 	color: #2f2f2f;
 }
@@ -313,7 +315,10 @@ sm {
 	}
 	.container-fluid.header h3{
 		color: #fff;
-	}	
+	}
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -334,6 +339,9 @@ sm {
 	.container-fluid.header h3{
 		color: #fff;
 	}	
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
 
 @media screen and (min-width: 0) and (max-width: 991px) {
@@ -354,6 +362,9 @@ sm {
 	.container-fluid.header h3{
 		color: #fff;
 	}	
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
 //  ipad
 @media screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
@@ -374,6 +385,9 @@ sm {
 	.container-fluid.header h3{
 		color: #fff;
 	}	
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
 
 // iphone 6
@@ -395,6 +409,9 @@ sm {
 	.container-fluid.header h3{
 		color: #fff;
 	}	
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
 // iphone 6 plus
 @media screen and (min-device-width : 414px) and (max-device-width : 736px) {
@@ -415,6 +432,9 @@ sm {
 	.container-fluid.header h3{
 		color: #fff;
 	}	
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
 
 // iphone 5
@@ -436,4 +456,7 @@ sm {
 	.container-fluid.header h3{
 		color: #fff;
 	}	
+	.container-fluid.header .photo{
+			background-position-y: 0px; 
+	}
 }
