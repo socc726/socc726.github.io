@@ -180,7 +180,7 @@ a:after {
 }
 .container-fluid.header .photo{
 
-	background: url(../img/header-bg.jpg) no-repeat center top;
+	background: url(../img/header-bg1.jpg) no-repeat center top;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -189,6 +189,7 @@ a:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	background-position-y: -95px; 
 }
 /* Intnro Wrap */
 
