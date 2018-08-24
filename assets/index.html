@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GitHub Sales Engineer Answers</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+		body{
+			margin: 0 auto;
+		}
+
+		.hide {
+			display: none;
+		}
+
+		.command-line {
+	    border: 2px solid #ddd;
+	    background-color: #333;
+	    color: #fff;
+	    padding: 10px;
+	    -webkit-font-smoothing: auto;
+	    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  	}
+
+  	.output {
+  		color:#63E463;
+  	}
+
+  	code {
+  		background: transparent;
+  		color:#fff;
+  	}
+
+  	.hide-list > li{
+  		list-style: none;
+  	}
+	</style>
+</head>
+<body class="container-fluid">
+
+	<!-- -Overview- -->
+	<div class="row">
+		<div class="col-lg-6">
+			<h2>GitHub Sales Engineer Answers - Sam Merrill</h2>
+			<br>
+			<p>Hi! My name is Sam Merrill and this is my submission for GitHub's <b>'Sales Engineer East Coast'</b> role. I wanted to approach these answers in a synthetic way. I looked at each question and imagined how a sales guy would answer and how a engineer would answer. Once I had an idea on how to answer the question each way, I synthesized them to come up with the Sales Engineer answer. This technique proved worthy and helped me deconstruct each question in a manageable way.</p>
+			
+			<p>I had a lot of fun researching and answering these questions and I truly believe I'd be excited each day working for GitHub. I hope you will consider me for the next round of the interview process. Thanks!</p>
+		</div>
+	</div>
+	<hr>
+
+	<!-- -Answer 1- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q1 -- SVN Inquiry</h2>
+
+			<p>Is there an integration with SVN? We are using SVN externals; if we decided to migrate from SVN to Git, how would we go about doing that?</p>
+
+		</div>
+
+		<div class="col-lg-6">
+
+			<h2>Answer</h2>
+			
+			<p>Dear Mr. Doe,</p>
+			
+			<p>Thank you for reaching out about SVN migration. I know this process can be overwhelming at times but it is definitely worth it. Thankfully many developers have gone through the same hardship and have made awesome tools to ease the burden.</p>
+
+			<p>The best tool to help you migrate is actually Git itself. Git comes bundled with a command called 'git-svn', which helps you migrate your Subversion repos to Git repos. Since you are using SVN externals you will also need to convert those to Git Submodules.</p>
+
+			<p>A high level heuristic for getting this done is as follows: </p>
+
+			<ul class="hide-list">
+				<li>1) Download <a href="https://git-scm.com/downloads">Git</a></li>
+				<li>2) Retrieve a list of all Subversion authors</li>
+				<li>3) Clone Subversion repository with 'git svn clone'</li>
+				<li>4) If external modules, then create Git submodules</li>
+				<li>5) Push to a Git repository</li>
+			</ul>
+			
+			<p>A <a href="http://patrickbougie.com/2013/03/18/convert-svn-to-git-repository/">great step by step guide</a> on converting SVN to Git was written by Patrick Bougie, a web developer with a ton of contributions to the open source world. He covers migrating from SVN to Git and emulating SVN Externals using Git Submodules. Try following his guide and contact me if you have any questions or run into any issues.</p>
+
+			<p>Once you have migrated your SVN code to Git we can set up a call to talk about which <a href="https://github.com/pricing"> GitHub plan</a> will work best for you and your team. </p>
+
+			<p>Keep me updated on your migration and let's talk soon!</p>
+
+			<p>
+				<br>
+				<span>Sam Merrill - GitHub Sales Engineer</span>
+				<br>
+				<span>Email: smerrill@github.com</span>
+				<br>
+				<span>Phone: (703) 909-2104</span>
+			</p>
+
+		</div>
+		
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+
+			<p>For this answer I didn't want to reinvent the wheel. There are so many tools, tutorials, and threads out there dedicated to SVN - Git migration that I thought it best to point him in the right direction and lend a helping hand throughout the migration process if more specific questions arise. I broke the steps down in a high level way, and left the more technical instructions for an online tutorial. The tutorial I linked him to is one in which SVN externals are migrated to Git Submodules, so it fits his specific business requirement.</p>
+
+			<p>Aside from giving him a general answer to his question I also wanted to start pushing him towards making a decision on going with GitHub as his version control platform. For all I know this could just be some random project manager looking for a step by step guide on how to migrate his team's code to Git and then use another service for hosting.</p>
+
+			<h3>Resources:</h3>
+
+			* <a href="https://git-scm.com/book/en/v1/Git-and-Other-Systems-Git-and-Subversion">Git SVN</a>
+			<br>
+			* <a href="https://gist.github.com/rickyah/7bc2de953ce42ba07116">Git SVN - simple overview</a>
+			<br>
+			* <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Git Submodules</a>
+			<br>
+			* <a href="http://patrickbougie.com/2013/03/18/convert-svn-to-git-repository/">Patrick Bougie</a>
+		</div>
+
+	</div>
+	<hr>
+
+	<!-- -Answer 2- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q2 -- GitHub.com or GitHub Enterprise</h2>
+
+			<p>We're considering both GitHub.com and GitHub Enterprise for our 60 developer team. Which one is the better choice for me to present to management?</p>
+
+		</div>
+
+		<div class="col-lg-6">
+			<h2>Sales Answer</h2>
+
+			<p>Dear Mr. Doe,</p>
+
+			<p>Thank you for your inquiry and consideration of GitHub for your development team!</p>
+
+			<p>Choosing the right route for your team is a critical decision and I'd like to help shed light on the available options.</p>
+
+			<p>The main difference between GitHub.com and GitHub Enterprise is where your development team's source code will live.</p>
+
+			<p> 
+				With GitHub.com your developers would be storing their code on our servers in the cloud. They would have the option of creating a project on either a public or private repository. If public, then your company's code would be totally open source, visible to the world. If private, then your code repositories would be closed off to the world. If you went this route, then a good option would be GitHub.com Business Cloud. It has great uptime, we offer a 99.95% uptime guarantee so you can be confidant your code will be highly available.
+			</p>
+
+			<p>
+				GitHub Enterprise is different in that we license our software out to your company and you the business owner has the ability to choose where your code lives. AWS, Azure, Google Cloud Platform are all very popular cloud providers that our clients have accounts with and that GitHub Enterprise can integrate with. We also do on-premises installs of our software. We provide you with a virtual appliance that sits behind your firewall and is configurable to meet any security needs your company may have.	
+			</p>
+
+			<p>
+				So for your situation with 60 developers either option is going to be great in terms of up-time, speed, etc. If your company's codebase is open source, then I recommend going with GitHub.com Business Cloud and using both public and private repositories. If your company's codebase is proprietary and needs to remain secure behind closed doors, then GitHub Enterprise is the way to go. Also a combination of both GitHub.com Business Cloud and GitHub Enterprise  works for company's that want to contribute to the open source community, yet keep their proprietary code private.
+			</p>
+
+			<p>
+				What I'd love to do now is to get some more information about your company and where you see your company's codebase living.
+			</p>
+				
+			<p>
+				Options to choose from:
+				<br>
+				<br>
+
+				1) <a href="https://github.com/pricing/team">GitHub.com Team - Public/Private Repositories</a> 
+				
+				<br>
+
+				2) <a href="https://github.com/pricing/business-cloud">GitHub.com Business Cloud - Public/Private Repositories</a> 
+				
+				<br>
+
+				3) <a href="https://github.com/pricing/enterprise">GitHub Enterprise - Cloud or On-Premises</a> 
+
+				<br>
+				<br>
+				* <a href="https://github.com/pricing">See All Plans Here</a> 
+			</p>
+
+			<p>After I've learned a little bit more about your company then we can set up a meeting with you and your management team. I can speak to all the benefits your organization will get by using GitHub as its version control platform. GitHub integrates with tons of applications that project managers hold dear to their heart including JIRA, ZenHub, Aha!, and Zube. This lets project managers feel more included in the development process because they can start tracking actual code commits, and seeing their developers progress in real time. Share with them <a href="https://everhour.com/blog/project-management-using-github/">this article</a> about using GitHub for project management.</p>
+
+			<p>Thank you again for reaching out and please write back with any questions you may want me to address during our meeting,</p>
+
+			<p>
+				<br>
+				<span>Sam Merrill - GitHub Sales Engineer</span>
+				<br>
+				<span>Email: smerrill@github.com</span>
+				<br>
+				<span>Phone: (703) 909-2104</span>
+			</p>
+		</div>
+		
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+
+			<p>I approached this answer trying to educate rather than persuade. I gave a brief summary of all the different options and didn't try to assume or push an option that might not fit the business. After I gave an overview of GitHub's different platform options I basically let him know that any pricing plan could work for his company. This helps build trust, he knows I'm not going to try and upsell him once I get more information from him about his company. Now the most expensive plan may end up being right for his company, but without initial trust we may never come to that conclusion because a comfortable dialog was never exchanged.</p>
+
+			<p>Where I want to lead this conversation is to the phone, webinar, or ideally an appointment at their office. But as the email states he wants something to "present to management" first, which is why I speak to the project management apps GitHub integrates with. Once they approve he can email me back details about his company and which plan he thinks is best. I would then build my presentation around that and set up a meeting.</p>
+			
+			<h3>Resources:</h3>
+			
+			<ul>
+				<li><a href="https://everhour.com/blog/project-management-using-github/">Project management using github</a>
+				</li>
+				<li><a href="https://github.com/works-with/category/project-management?enterprise_compatible=on">Project management apps on GitHub Marketplace</a></li>
+				<li><a href="https://www.theregister.co.uk/2017/03/02/github_opens_door_to_hosted_service_for_businesses/">Article speaking about businesses using both on-premises and hosted versions of their code.</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<hr>
+
+	<!-- -Answer 3- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q3 -- GitHub.com Server Question</h2>
+
+			<p>Hi GitHub! My company has an internal Git server and use GitHub.com. For workflow purposes, how do I sync my repository to both GitHub and the internal Git server?</p>
+
+			<p>Note: One common option is git remotes.</p>
+
+		</div>
+
+		<div class="col-lg-6">
+			<h2>Answer</h2>
+
+			<p>Dear Mr. Doe,</p>
+
+			<p>Thank you for reaching out about repository syncing! This is a common problem I see businesses running into and thankfully Git makes it easy to solve.</p>
+
+			<p>All we have to do is add remote repositories to our local repository, and Git will start pushing to and pulling from each location. Below are the steps used to setup remote repositories from the command line: </p>
+
+			<div class="command-line">
+					$ git remote add repo1 https://192.168.0.255/username/repo1.git
+					<br>
+					$ git remote set-url --add repo1 https://github.com/username/repo2.git
+					<br>
+
+					$ git remote add repo2 https://github.com/username/repo2.git
+					<br>
+					$ git push -vu repo1 master
+
+			</div>
+			<br>
+			<p>Now we can list out all of our remotes: </p>
+			<div class="command-line">
+					$ git remote -v
+					<br>
+					<span class="output">
+						repo1  https://192.168.0.255/username/repo1.git (fetch)
+						<br>
+						repo1  https://192.168.0.255/username/repo1.git (push)
+						<br>
+						repo1  https://github.com/username/repo2.git (push)
+						<br>
+						repo2  https://github.com/username/repo2.git (fetch)
+						<br>
+						repo2  https://github.com/username/repo2.git (push)
+					</span>
+					
+				</code>
+			</div>
+			<br>
+			<p>The output shows us that we are now synced to two different remote repositories! Now when we push code the changes will be reflected in both repositories.</p>
+
+			<p>Please feel free to contact me on my cell or personal email if you have any further questions.</p>
+
+			<p>Thanks again for reaching out and have an awesome day,</p>
+
+			<p>
+				<br>
+				<span>Sam Merrill - GitHub Sales Engineer</span>
+				<br>
+				<span>Email: smerrill@github.com</span>
+				<br>
+				<span>Phone: (703) 909-2104</span>
+			</p>
+		</div>
+
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+
+			<p>Git remotes was the best answer for this question. It can be achieved with just a couple commands from the console, so I thought it best to actually show the code in the answer. I wanted to keep this answer short, direct, and enthusiastic. This person showed excitement in the question with an opening sentence of "Hi GitHub!" I wanted to keep that level of excitement going with an answer that wasn't over complicated and provide a solution that could be implemented in a matter of minutes.</p>
+
+			<h3>Resources:</h3>
+			<ul>
+				<li><a href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes">Git Remotes Documentation</a></li>
+				<li><a href="https://stackoverflow.com/questions/849308/pull-push-from-multiple-remote-locations/12795747#12795747">Stack Overflow question</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<hr>
+
+	<!-- -Answer 4- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q4 -- Customization request</h2>
+
+			<p>Unless GitHub Enterprise can come with time tracking tools and the ability to customize the front end, it looks like we may have to take our business and 100 developer seats elsewhere. What can you do to make this happen?</p>
+
+		</div>
+
+		<div class="col-lg-6">
+			<h2>Sales Answer</h2>
+				<p>
+					Dear Mr. Doe,
+				<p>
+				<p>
+					Thank you for reaching out and letting us know how GitHub can be improved as a product. Without customer feedback it'd be impossible for us to grow as a company, I truly appreciate you taking the time to let us know how we can get better!
+				</p>
+				<p>
+					Currently GitHub Enterprise does not offer a built-in time tracking module. I definitely understand how this would improve the Enterprise platform by not having to manage a separate application for time tracking.
+				</p>
+
+				<p>
+					A great project management tool that does integrate seamlessly with GitHub Enterprise is <a href="https://www.zenhub.com/enterprise">ZenHub Enterprise</a>. It enhances GitHub's built in features and allows you to customize your workflow. There is also an open request to <a href="https://github.com/ZenHubIO/support/issues/218">add time tracking</a> to ZenHub and team members agree that it should be on their roadmap. 
+				</p>
+
+				<p>
+					If I could get a better understanding of you company's workflow, then we could try coming up with a workaround that leverages GitHub's project management features to achieve the customizations you are looking for.
+				</p>
+
+				<p>I've attached a link to my calendar below, select a time that works for you and we can set up a call to discuss this more in depth!</p>
+				
+				<p>Thanks again for contacting us! I look forward to speaking with you soon,</p>
+
+				<p>
+					<br>
+					<span>Sam Merrill - GitHub Sales Engineer</span>
+					<br>
+					<span>Email: smerrill@github.com</span>
+					<br>
+					<span>Phone: (703) 909-2104</span>
+				</p>
+			</p>
+		</div>
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+
+			<p>This was a difficult question to approach because obviously the customer is frustrated with GitHub not being able to do certain things he wants. Unfortunately since he is using GitHub Enterprise the time tracking apps like Everhour, Codetally, Timely, etc can't be integrated. What I did not want to do was promise anything or flat out say no. I let him know that I understand the feature would be useful and how I appreciate this feedback. This lets him know that although he may not be getting what he asked for at least he is being taken seriously.</p>
+
+			<p>I have acknowledged that we don't offer the feature he is looking for, so I bring up workarounds. Sometimes a customer may not know some of the more intricate ways a software platform can be utilized. I talked about ZenHub Enterprise which integrates directly into GitHub Enterprise and all the customization features that come with it. Along with this I linked him to a GitHub support thread that requests ZenHub integrate a time tracking feature. This shows him that his request is completely reasonable, and is even on the company's roadmap.<p>
+			
+			<p>What I really want to do with this customer is get him on the phone. I want to provide a personalized email response, genuinely thanking him for being our customer and let him know he is a priority by setting up a phone call to discuss more in depth. On the phone I can discuss some of the ways project management is being done by enhancing GitHub's built in features with ZenHub. It would be a chance to inform the customer that maybe time tracking isn't necessary if he could set up Agile Development with <a href="https://help.zenhub.com/support/solutions/articles/43000010347#story-points-time-estimates">story points.</a></p>
+
+			<p>I also didn't want to mention anything too obvious in terms of customization, i.e. I don't know if something as obvious as GitHub Pages would solve the problem. So it is best to wait for the phone call to get a better idea of what they are looking for before perhaps insulting someone by recommending something they already know about.</p>
+
+			<p>Another thing I contemplated doing was mentioning our competitors GitLab and Bitbucket, both of whom offer time tracking features within their platforms. I wanted to acknowledge that our competitors offer what he is looking for, and he should feel free to try them out. This is keeping with the honesty and transparency theme that builds trust with customers. I didn't include that in the answer because I wasn't 100% sure if it was the right approach in the initial email response. Maybe it could be mentioned on the phone call later if the customer was still having doubts on staying with GitHub.</p>
+
+			
+			<h3>Resources:</h3>
+			<ul>
+				<li><a href="https://github.com/works-with/category/project-management?utf8=%E2%9C%93&enterprise_compatible=on">GitHub Project Management</a></li>
+				<li><a href="https://www.zenhub.com/enterprise">ZenHub Enterprise</a></li>
+				<li><a href="https://github.com/ZenHubIO/support/issues/218">GitHub Support - ZenHub Time Tracking Request</a></li>
+				<li><a href="https://help.zenhub.com/support/solutions/articles/43000010347#story-points-time-estimates">ZenHub Story Points</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+
+	<!-- -Answer 5- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q5 -- Unhappy customer</h2>
+
+			<p>I really like GitHub but I can't move forward with it unless there's a way to define a minimum number of required approved code reviews before a pull request is eligible to be merged. I've tried everything I can think of in the product to bolster our code review process but I'm hoping someone from GitHub might know more.</p>
+			
+			<p>Note: In addition to talking about what the product can do out of the box, consider looking at integrations that may help.</p>
+
+		</div>
+
+		<div class="col-lg-6">
+			<h2>Answer</h2>
+			
+			<p>Dear Mr. Doe,</p>
+
+			<p>Thank you for reaching out about GitHub's pull request and code review process.</p>
+
+			<p>
+				I'm happy to let you know that we now offer configurable options around pull requests, which includes a setting to enforce a minimum number of required reviews and approvals before a pull request is eligible to be merged. Admins have the ability to set enforceable rules around pull requests, you can view all of these rules in the 'Settings' page of each repository.
+			</p>
+
+			<p>In order to enable the required review setting you must first configure your branch as protected.</p>
+
+			<p>Below I have linked you to a step by step guide on how to setup required reviews for pull requests.</p>
+			
+			<p>
+				<ul>
+					<li>Step 1: <a href="https://help.github.com/articles/configuring-protected-branches/">Configure Protected Branch</a></li>
+					<li>Step 2: <a href="https://help.github.com/articles/enabling-required-reviews-for-pull-requests">Setup Minimum Code Review Requirements</a> 
+					</li>
+				</ul>
+			</p>
+
+			<p>Also I'd love to mention the wide variety of code quality and code review applications available on the GitHub marketplace. You can find tons of useful code review tools that integrate with GitHub on the <a href="https://github.com/works-with/category/code-review">GitHub Marketplace</a>. The app 'GitColony' is frequently rated as the number one code review tool for GitHub, both developers and managers love it for its clean ui, ease of use, and productivity enhancements.</p>
+			
+			<p>Feel free to contact me on my cell or personal email if you have any further questions!</p>
+
+			<p>Thanks again for contacting us,</p>
+
+			<p>
+				<br>
+				<span>Sam Merrill - GitHub Sales Engineer</span>
+				<br>
+				<span>Email: smerrill@github.com</span>
+				<br>
+				<span>Phone: (703) 909-2104</span>
+			</p>
+		</div>
+
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+
+			<p>This answer wasn't too hard to come by. A quick Google search provided the required information, and setting this up is not difficult. As a developer for the past seven years I have witnessed several occasions of other developers being short or rude with colleagues for asking simple questions before exhausting all resources. While this may fly in the engineering world it is no way to approach customers. The customer can sense haughty or snarky tones, the "I'm smarter than you" attitude, and any form of irony or sarcasm. I wanted to convey a tone of understanding and accommodation, a matter of fact answer that shows no hidden undertones or underlying annoyance. I approached answering this question by repeating back his question in the form of an affirmative and keeping things simple. I also used the phrase "I'm happy to let you know that we now...", which broken down signifies a couple things: </p>
+
+			<ul>
+				<li>1. Letting the customer know I'm happy to be answering his question. It shows I'm excited and proud of my company's product, and that I want the customer to be happy too - I want to transfer this excitement to the customer.</li>
+				<li>2. The keyword "now" disarms the customer and lets them feel at ease. It doesn't matter if the feature was just released (which it is new) or if it has been around since the dawn of time. The word "now" lets them feel like it is something new or not well known, and validates their frustration.</li>
+			</ul>
+
+			<p>After explaining what GitHub can do out of the box I mentioned the GitHub marketplace. Hopefully taking the time to write out all this information in a personalized way establishes goodwill between the customer and GitHub. The more information we can provide the customer, the better decision he or she can make. It shows that we care and that we are not just writing them off with a generic template email response.</p>
+
+			<h3>Resources:</h3>
+
+			<ul>
+				<li><a href="https://help.github.com/articles/configuring-protected-branches/">GitHub documentation on protected branches </a></li>
+				<li><a href="https://help.github.com/articles/enabling-required-reviews-for-pull-requests">GitHub documentation on code review requirements</a></li>
+				<li><a href="https://github.com/works-with/category/code-review">Code Review apps on GitHub Marketplace</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+
+	<!-- -Answer 6- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q6 -- Distribution question</h2>
+
+			<p>We’re evaluating GitHub Enterprise but we’re not interested in running a virtual appliance. Is there a way to manually install the software package on RHEL6? We have hundreds of developers who want to use GitHub but our security team won’t sign off on GitHub unless you can offer a bare metal install.</p>
+
+		</div>
+
+		<div class="col-lg-6">
+
+			<h2>Answer</h2>
+			
+			<p>Dear Ms. Doe,</p>
+
+			<p>Thank you for your recent request on running a bare metal install of GitHub Enterprise on your company's server. We truly appreciate your interest in using our Enterprise product.
+
+			<p>Taking your security team's hesitation into account, I can offer a solution that may appease their concerns on running a virtual appliance.</p>
+
+			<p>I propose setting up a new sever that sits behind a firewall dedicated to running GitHub Enterprise. Your security team could look into installing a secure network proxy such as NGINX or HAProxy that would route all internal GitHub requests to the dedicated server running GitHub Enterprise. This way all current RHEL6 servers remain sequestered away from the virtual appliance.</p>
+
+			<p>Note that the GitHub Enterprise virtual appliance does not attempt to access any outside services from your network. Admins have the ability to share and collect data from external services, but this is configurable and is off by default.
+
+			<p>What I'd love to do is get a better idea of the specific concerns your security team is having. Let's set up a call sometime this week, and your team and I can discuss the security specifications around the GitHub Enterprise virtual appliance.</p>
+
+			<p>I've attached a link to my calendar below, select a time that is good for you and your team so we can come up with a solution that works best for all parties!</p>
+			
+			<p>Thank you again for reaching out,
+			</p>
+			<p>
+				<br>
+				<span>Sam Merrill - GitHub Sales Engineer</span>
+				<br>
+				<span>Email: smerrill@github.com</span>
+				<br>
+				<span>Phone: (703) 909-2104</span>
+			</p>
+		</div>
+
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+			
+			<p>This was a challenging question to answer because GitHub does not offer a bare metal installation of its enterprise software. So in my answer I only talk about what we could do in order to get her security team to sign off on a virtual appliance. This company has hundreds of developers who want to use GitHub, so let's try as hard as possible to make that happen.</p>
+
+			<p>In order to make that happen we are going to have to reassure the security team that running our virtual appliance is safe. The solution I proposed sandboxes the virtual appliance on its own server, behind a firewall, and makes it only accessible through an internal network proxy. I'm also letting her know that the virtual appliance does not attempt to communicate with any outside services. My solution might not reassure the security team, but at least it will focus their concerns and get them to formulate specific questions for our upcoming call.</p>
+
+			<p>Hopefully what happens next is that she shares this information not only with her security team but with other members of the company involved in business operations. When they see a solution has been proposed that helps eliminate security concerns and also makes hundreds of developers happy, then compromise on the virtual appliance will be much easier. </p>
+
+			<h3>Resources:</h3>
+
+			<ul>
+				<li><a href="https://help.github.com/enterprise/2.11/admin/guides/installation/about-geo-replication/">About Geo Replication</a></li>
+				<li><a href="https://help.github.com/enterprise/2.14/admin/guides/installation/creating-a-high-availability-replica/#creating-geo-replication-replicas">Creating a High Availability Replica</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<hr>
+
+	<!-- -Answer 7- -->
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<h2>Q7 -- Mirroring</h2>
+
+			<p>We are looking at GitHub Enterprise as a version control and collaboration solution for our company. We have developers scattered across the world and in some of these regions the internet connectivity is terrible, which means git clones or svn checkouts are extremely slow. Does GitHub Enterprise have a way of deploying mirrors in these regions? If so are these read/write mirrors, meaning we also benefit from great improvements on large data pushes?</p>
+
+		</div>
+
+		<div class="col-lg-6">
+			<h2>Answer</h2>
+			
+			<p>Dear Ms. Doe,</p>
+
+			<p>Yes I'm glad you asked! GitHub does offer full read/write mirroring capabilities. For your specific situation I would recommend going with our Geo-replication feature. </p>
+
+			<p>GitHub Enterprise offers full fledged Geo-replication for all of your company's repositories.</p>
+
+			<p>This means configuring a primary repository and replicas in various regions your company does business in. This way when an employee wants to clone a repository, Geo DNS will route the network request to the closet server, so latency is reduced.</p>
+
+			<p>With Geo-replication you are harnessing the full power of Git (read and write) and each repository is mirrored across every available replica. Note that data pushes are potentially limited by your least performant replica, but this shouldn't be a problem if each replica has enough resources allocated to it.</p>
+			
+			<p>I'd love to get some more information from you so we can discuss next steps. Specifically will your company be utilizing the cloud or going with an on-premises installation? And also which areas of the globe is your team located? </p>
+
+			<p>Thank you for reaching out,</p>
+
+			<p>
+				<br>
+				<span>Sam Merrill - GitHub Sales Engineer</span>
+				<br>
+				<span>Email: smerrill@github.com</span>
+				<br>
+				<span>Phone: (703) 909-2104</span>
+			</p>
+			
+			<p>FYI: Here are the links to the primary documentation on GitHub Enterprise Geo-replication</p>
+
+			<ul>
+				<li><a href="https://help.github.com/enterprise/2.11/admin/guides/installation/about-geo-replication/">About Geo Replication</a></li>
+				<li><a href="https://help.github.com/enterprise/2.14/admin/guides/installation/creating-a-high-availability-replica/#creating-geo-replication-replicas">Creating a High Availability Replica</a></li>
+
+				<li><a href="https://githubengineering.com/stretching-spokes/">GitHub Engineering Blog Post On Geo Replication</a></li>
+			</ul>
+
+		</div>
+
+		<div class="col-lg-12">
+
+			<h3>Rationale:</h3>
+			
+			<p>This was a great opportunity to educate a potential customer on GitHub's Geo-replication feature. It seems like the perfect solution for this customer's problem.</p>
+
+			<p>After the brief overview of what GitHub Geo-replication has to offer, I wanted to get more information from him about how his company plans to install the software i.e. will they be using the cloud or an on-premises installation? Also knowing which areas his company is located will allow me to come up with a plan on how to distribute the primary and replicas to optimize latency reduction.</p>
+			<h3>Resources:</h3>
+
+			<ul>
+				<li><a href="https://help.github.com/enterprise/2.11/admin/guides/installation/about-geo-replication/">About Geo Replication</a></li>
+				<li><a href="https://help.github.com/enterprise/2.14/admin/guides/installation/creating-a-high-availability-replica/#creating-geo-replication-replicas">Creating a High Availability Replica</a></li>
+				<li><a href="https://githubengineering.com/stretching-spokes/">GitHub Engineering Blog Post On Geo Replication</a></li>
+			</ul>
+
+			<br>
+			<br>
+		
+		</div>
+
+
+	</div>
+	<hr>	
+</body>
+
+</html>
+
+<script>
+	
+	var showAnswer = function(event, className) {
+
+		var button = event.srcElement;
+
+		var answer = $('.' + className);
+
+		if ( answer.hasClass('hide') ) {
+			answer.removeClass('hide');
+			button.innerText = 'Unsynthesize';
+			return;
+		}
+
+		answer.addClass('hide');
+		button.innerText = 'Synthesize';
+	}
+
+</script>
